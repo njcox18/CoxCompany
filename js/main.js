@@ -2,8 +2,11 @@
 
 // 1. Define route components.
 // These can be imported from other files
-const Foo = { template: '<div>foo</div>' }
-const Bar = { template: '<div>bar</div>' }
+const about = Vue.component('about', require('./components/about.vue'));
+const bio = Vue.component('bio', require('./components/bio.vue'));
+const manufacturers = Vue.component('manufacturers', require('./components/manufacturers.vue'));
+const design = Vue.component('design', require('./components/design.vue'));
+const contact = Vue.component('contact', require('./components/contact.vue'));
 
 // 2. Define some routes
 // Each route should map to a component. The "component" can
@@ -11,8 +14,12 @@ const Bar = { template: '<div>bar</div>' }
 // `Vue.extend()`, or just a component options object.
 // We'll talk about nested routes later.
 const routes = [
-  { path: '/foo', component: Foo },
-  { path: '/bar', component: Bar }
+  { path: '/about', component: about },
+  { path: '/bio', component: bio },
+  { path: '/manufacturers', component: manufacturers},
+  { path: '/design-tools', component: design},
+  { path: '/contact-us', component: contact}
+
 ]
 
 // 3. Create the router instance and pass the `routes` option
@@ -28,6 +35,6 @@ const router = new VueRouter({
 const app = new Vue({
   router,
   data: {
-    message: "Hello Cox Company"
+    
   }
 }).$mount('#app')

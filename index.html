@@ -46,21 +46,21 @@
                     <a class="navbar-item" href="/">
                         Home
                     </a>
-                    <a class="navbar-item " href="/about">
+                    <router-link class="navbar-item " to="/about">
                         About
-                    </a>
-                    <a class="navbar-item " href="/bio">
+                    </router-link>
+                    <router-link class="navbar-item " to="/bio">
                         Bio
-                    </a>
-                    <a class="navbar-item " href="/manufacturers">
+                    </router-link>
+                    <router-link class="navbar-item " to="/manufacturers">
                         Manufacturers
-                    </a>
-                    <a class="navbar-item " href="/design-tools">
+                    </router-link>
+                    <router-link class="navbar-item " to="/design-tools">
                         Design Tools
-                    </a>
-                    <a class="navbar-item " href="/contact-us">
+                    </router-link>
+                    <router-link class="navbar-item " to="/contact-us">
                         Contact Us
-                    </a>
+                    </router-link>
                 </div>
 
                 <div class="navbar-end">
@@ -68,13 +68,6 @@
                 </div>
             </div>
         </nav>
-        <p>
-            <!-- use router-link component for navigation. -->
-            <!-- specify the link by passing the `to` prop. -->
-            <!-- `<router-link>` will be rendered as an `<a>` tag by default -->
-            <router-link to="/foo">Go to Foo</router-link>
-            <router-link to="/bar">Go to Bar</router-link>
-        </p>
         <!-- route outlet -->
         <!-- component matched by the route will render here -->
         <router-view></router-view>
