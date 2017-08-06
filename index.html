@@ -8,31 +8,16 @@
     <title>Cox Company</title>
     <meta name="description" content="Cox Company">
     <meta name="author" content="Nick Cox">
-
     <link rel="stylesheet" href="css/bulma.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <div id="app">
         <nav class="navbar ">
             <div class="navbar-brand">
                 <a class="navbar-item" href="/">
                     <img src="img/Cox-Logo.png" alt="Cox Company Logo" />
                 </a>
-
-                <a class="navbar-item is-hidden-desktop" href="https://github.com/jgthms/bulma" target="_blank">
-                    <span class="icon" style="color: #333;">
-                <i class="fa fa-github"></i>
-            </span>
-                </a>
-
-                <a class="navbar-item is-hidden-desktop" href="https://twitter.com/jgthms" target="_blank">
-                    <span class="icon" style="color: #55acee;">
-                <i class="fa fa-twitter"></i>
-            </span>
-                </a>
-
                 <div class="navbar-burger burger" data-target="navMenuExample">
                     <span></span>
                     <span></span>
@@ -40,42 +25,92 @@
                 </div>
             </div>
 
-            <div id="navMenuExample" class="navbar-menu">
+            <div id="coxNav" class="navbar-menu">
                 <div class="navbar-start">
                         
                     <a class="navbar-item" href="/">
                         Home
                     </a>
-                    <router-link class="navbar-item " to="/about">
+                    <a class="navbar-item " href="/about">
                         About
-                    </router-link>
-                    <router-link class="navbar-item " to="/bio">
+                    </a>
+                    <a class="navbar-item " href="/bio">
                         Bio
-                    </router-link>
-                    <router-link class="navbar-item " to="/manufacturers">
+                    </a>
+                    <a class="navbar-item " href="/manufacturers">
                         Manufacturers
-                    </router-link>
-                    <router-link class="navbar-item " to="/design-tools">
+                    </a>
+                    <a class="navbar-item " href="/design-tools">
                         Design Tools
-                    </router-link>
-                    <router-link class="navbar-item " to="/contact-us">
+                    </ak>
+                    <a class="navbar-item "href="/contact-us">
                         Contact Us
-                    </router-link>
+                    </a>
                 </div>
 
                 <div class="navbar-end">
-                    <div class="navbar-item">Phone: (716)648-6321</div>
+                    <div class="navbar-item flex-column">
+                        <h1 class="company-name">Edward H. Cox Co. Inc.</h1>
+                        <div class="phone">Phone: (716)648-6321</div>
+                    </div>
                 </div>
             </div>
         </nav>
-        <!-- route outlet -->
-        <!-- component matched by the route will render here -->
-        <router-view></router-view>
-    </div>
+        <div class="section">
+            <div class="container">
+                <h2 class="headline">For 3 generations, the Cox Company has partnered with the design professionals & mechanical contractors of Western New York, providing applied HVAC solutions. Our mission is to build value added relationships with our customers by contributing to the growth & prosperity of their businesses.</h2>
+                
+                <div class="tabs is-centered home-tabs">
+                <ul>
+                    <li id="mechanical" class="is-active"><a>Mechanical Products</a></li>
+                    <li id="sheetmetal"><a>Sheetmetal Products</a></li>
+                </ul>
+                </div>
 
-    <script src="js/vue.js"></script>
-    <script src="js/vue-router.js"></script>
-    <script src="js/main.js"></script>
+                <div class="mechanical-content active">
+                    <h3>Mechanical Products</h3>
+                    <a title="Fin Tube Radiation" href="http://www.rittling.com/downloads/enclosure/" target="_blank">Fin Tube Radiation</a>
+                    <a title="Convectors" href="http://www.rittling.com/downloads/cabinet-convectors/" target="_blank">Convectors</a>
+                    <!--<a title="Custom Enclosures" href="http://coxhvac.com/CE.html" target="_blank"><span style="color: #3760a8;">Custom Enclosures</span></a>-->
+                    <a title="Unit Heaters" href="http://www.rittling.com/downloads/rittling-unit-heaters/" target="_blank">Unit Heaters</a>
+                    <a title="Fan Coil Units" href="http://www.rittling.com/downloads/room-fan-coils/" target="_blank">Fan Coil Units</a>
+                    <a title="Water Source Heat Pumps" href="http://www.rittling.com/downloads/vertical-stack-water-source-heat-pump/" target="_blank">Water Source Heat Pump</a>
+                    <!--<a title="Radiant Ceiling Panels" href="http://coxhvac.com/RCP.html" target="_blank"><span style="color: #3760a8;">Radiant Ceiling Panels</span></a>-->
+                    <a title="Steel Panel Radiators" href="http://www.rittling.com/downloads/panel-rad/" target="_blank">Steel Panel Radiators</a>
+                    <a title="Induction Units" href="http://www.rittling.com/downloads/induction-units/" target="_blank">Induction Units</a>
+                    <!--<a title="Energy Recovery Units" href="http://coxhvac.com/LCERU.html" target="_blank"><span style="color: #3760a8;">Energy Recovery Units</span></a>-->
+                    <!--<a title="Makeup Air &amp; Air Rotation Units" href="http://coxhvac.com/MakeUpAir.html" target="_blank"><span style="color: #3760a8;">Makeup Air &amp; Air Rotation Units</span></a>-->
+                    <a title="Dedicated Outside Air Systems" href="http://www.appliedair.com/fresh-air-package.asp" target="_blank">Dedicated Outside Air Systems</a>
+                    <a title="Electronic Humidifiers" href="http://www.carnes.com/" target="_blank">Electronic Humidifiers</a>
+                    <a title="Cabinet Unit Heaters" href="http://www.rittling.com/downloads/cabinet-unit-heaters/" target="_blank">Cabinet Unit Heaters</a>
+                    <a title="Classroom Cabinetry" href="http://www.rittling.com/downloads/classroom-cabinetry/" target="_blank">Classroom Cabinetry</a>
+                </div>
+                <div class="sheetmetal-content">
+                    <h3>Sheetmetal Products</h3>
+                    <!--<a title="Exhaust Fans &amp; Blowers" href="http://coxhvac.com/ExhaustFans.html" target="_blank"><span style="color: #3760a8;">Exhaust Fans &amp; Blowers</span></a>-->
+                    <!--<a title="Registers, Grilles, Diffusers" href="http://coxhvac.com/RGD.html" target="_blank"><span style="color: #3760a8;">Registers, Grilles, Diffusers</span></a>-->
+                    <!--<a title="Louvers &amp; Dampers" href="http://coxhvac.com/LD.html" target="_blank"><span style="color: #3760a8;">Louvers &amp; Dampers</span></a>-->
+                   <!--<a title="VAV Terminal Units" href="http://coxhvac.com/VAV.html" target="_blank"><span style="color: #3760a8;">VAV Terminal Units</span></a>-->
+                   <a title="Lab Exhaust Systems" href="http://www.lorencook.com/labexhausts.asp" target="_blank">Lab Exhaust Systems</a>
+                   <a title="Gravity Ventilators" href="http://www.lorencook.com/gravityvents.asp" target="_blank">Gravity Ventilators</a>
+                   <a title="Seismic Restraint Systems" href="http://www.vibro-acoustics.com/products/restraint-systems" target="_blank">Seismic Restraint Systems</a>
+                   <a title="Vehicle Exhaust Systems" href="http://www.nederman.com/sitecore/content/Product%20Database/Products/Exhaust%20Extraction%20Systems.aspx" target="_blank">Vehicle Exhaust Systems</a>
+                   <a title="Sound Attenuators" href="http://www.vibro-acoustics.com/products/noise-control/hvac-silencers" target="_blank">Sound Attenuators</a>
+                   <a title="Venting Systems &amp; Grease Ducts" href="http://www.ampcostacks.com/" target="_blank">Venting Systems &amp; Grease Ducts</a>
+                   <a title="Kitchen Hoods" href="http://www.kees.com/" target="_blank">Kitchen Hoods</a>
+                   <a title="Roof Curbs &amp; Pipe Portals" href="http://www.patecurbs.com/index.htm" target="_blank">Roof Curbs &amp; Pipe Portals</a>
+                   <a title="Electric Heat &amp; Duct Heaters" href="http://www.redd-i.com/" target="_blank">Electric Heat &amp; Duct Heaters</a>
+                   <!--<a title="Fire/Smoke Dampers" href="http://coxhvac.com/FSD.html" target="_blank"><span style="color: #3760a8;">Fire/Smoke Dampers</span></a>-->
+
+                </div>
+            </div>
+        </div>
+
+    <script
+    src="http://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>

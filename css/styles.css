@@ -1,8 +1,55 @@
+/*Helpers*/
+.flex-column {
+    flex-direction: column;
+    align-self: center;
+}
+
+/*Overrides */
+.tabs li.is-active a {
+    border-bottom-color: #3760a8;
+    color: #3760a8;
+}
+
+/*Main*/
+html {
+    font-size: 10px;
+}
+
+a {
+    color: #3760a8;
+}
+
+h2 {
+    color: #ae002d;
+    font-size: 2.5rem;
+    line-height: 1.1;
+}
+
+h3 {
+    font-size: 2rem; 
+}
+
 /*Navbar*/
 .navbar {
-    min-height: 5rem;
+    min-height: 7rem;
 }
 
 .navbar-item img {
-    max-height: 3rem;
+    max-height: 7rem;
+}
+
+/*Home*/
+.home-tabs li {
+    width: 50%;
+}
+
+.mechanical-content , .sheetmetal-content  {
+    display: none;
+}
+.mechanical-content.active , .sheetmetal-content.active {
+    display: block;
+}
+
+.mechanical-content a , .sheetmetal-content a {
+    display: block;
 }
