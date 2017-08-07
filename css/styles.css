@@ -17,6 +17,7 @@ html {
 
 a {
     color: #3760a8;
+    font-size: 1.4rem;
 }
 
 h2 {
@@ -38,7 +39,15 @@ h3 {
     max-height: 7rem;
 }
 
+.navbar-link {
+    color: #3760a8;
+}
+
 /*Home*/
+.home-tabs {
+    margin-top: 20px;
+}
+
 .home-tabs li {
     width: 50%;
 }
