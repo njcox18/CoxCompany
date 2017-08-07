@@ -36,11 +36,11 @@ h3 {
 
 /*Navbar*/
 .navbar {
-    min-height: 7rem;
+    min-height: 10rem;
 }
 
 .navbar-item img {
-    max-height: 7rem;
+    max-height: 10rem;
 }
 
 .navbar-link {
