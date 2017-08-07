@@ -20,14 +20,20 @@ a {
     font-size: 1.4rem;
 }
 
+a:hover {
+    text-decoration: underline;
+    color: #3760a8;
+}
+
 h1 {
     font-size: 2.5rem;
 }
 
 h2 {
     color: #ae002d;
-    font-size: 2.5rem;
+    font-size: 2rem;
     line-height: 1.1;
+    font-style: italic;
 }
 
 h3 {
@@ -37,6 +43,10 @@ h3 {
 /*Navbar*/
 .navbar {
     min-height: 10rem;
+}
+
+.navbar-item:hover {
+    text-decoration: none;
 }
 
 .navbar-item img {
@@ -60,6 +70,16 @@ h3 {
     width: 50%;
 }
 
+.tabs li a {
+    font-size: 2rem;
+}
+
+.tabs li a:hover {
+    color: #3760a8;
+    border-color: #3760a8;
+    text-decoration: none;
+}
+
 .mechanical-content , .sheetmetal-content  {
     display: none;
 }
@@ -69,4 +89,9 @@ h3 {
 
 .mechanical-content a , .sheetmetal-content a {
     display: block;
+}
+
+/* About */
+.about-image {
+    float: right;
 }
