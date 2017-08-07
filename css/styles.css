@@ -40,6 +40,12 @@ h3 {
     font-size: 2rem; 
 }
 
+p {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
 /*Navbar*/
 .navbar {
     min-height: 10rem;
