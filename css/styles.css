@@ -20,6 +20,10 @@ a {
     font-size: 1.4rem;
 }
 
+h1 {
+    font-size: 2.5rem;
+}
+
 h2 {
     color: #ae002d;
     font-size: 2.5rem;
@@ -41,6 +45,10 @@ h3 {
 
 .navbar-link {
     color: #3760a8;
+}
+
+.phone {
+    font-size: 2.5rem;
 }
 
 /*Home*/
