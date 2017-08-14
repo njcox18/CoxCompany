@@ -118,8 +118,24 @@ p {
     font-size: 1.6rem;
 }
 
-.bio-content {
+.learn-content {
     display: none;
+}
+
+.learn-content.active {
+    display: block;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    font-size: 1.4rem;
+}
+
+.learn-more {
+    color: #3760a8;
+    font-size: 1.4rem;
+    cursor: pointer;
 }
 
 /* Manufacturer */
