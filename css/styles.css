@@ -97,6 +97,10 @@ p {
     display: block;
 }
 
+.slick-slide img {
+    margin: 0 auto;
+}
+
 /* About */
 
 
