@@ -121,3 +121,13 @@ p {
 .bio-content {
     display: none;
 }
+
+/* Manufacturer */
+.tile a {
+    display: block;
+    margin: 0 auto;
+}
+
+.tile.is-ancestor:not(:last-child) {
+    margin-bottom: 2rem;
+}
