@@ -9,6 +9,9 @@
     border-bottom-color: #3760a8;
     color: #3760a8;
 }
+.section {
+    padding: 2rem 1.5rem;
+}
 
 /*Main*/
 html {
