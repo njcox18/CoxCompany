@@ -1,34 +1,16 @@
 $(function(){
 
-  var $learnMore = $('.learn-more'),
-      $learnContent = $('.learn-content'),
-      $modal = $('.modal'),
-      $modalClose = $('.modal-close');
+  var prev = 0;
+  var $window = $(window);
+  var $nav = $('.navbar');
+  var $html = $('html');
 
-  $learnMore.on('click', function() {
-    var $this = $(this);
-
-    var name = $this.data('name');
-
-    $learnContent.each(function(){
-      var $that = $(this);
-      var contentName = $that.data('name');
-        if (name === contentName) {
-          $that.addClass('active');
-          $modal.addClass('is-active');
-        }
+    $window.on('scroll', function () {
+      var scrollTop = $window.scrollTop();
+      $nav.toggleClass('is-fixed-top', scrollTop > prev);
+      $html.toggleClass('has-navbar-fixed-top', scrollTop > prev);
+      prev = scrollTop;
     });
-
-    $modalClose.on('click', function(){
-      $learnContent.removeClass('active');
-      $modal.removeClass('is-active');
-    });
-
-
-        
-  });
-
-      
 
 
 });
