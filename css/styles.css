@@ -17,6 +17,51 @@ html.has-navbar-fixed-top {
     padding-top: 151px;
 }
 
+button.navbar-burger {
+    border: none;
+    background: #fff;
+    height: 10rem;
+    width: 10rem;
+}
+
+.navbar-burger span:nth-child(1) {
+    top: calc(50% - 10px);
+}
+
+.navbar-burger span:nth-child(2) {
+    top: calc(50% + 5px);
+}
+
+.navbar-burger span:nth-child(3) {
+    top: calc(50% + 20px);
+}
+
+.navbar-burger.is-active span:nth-child(1) {
+    top: calc(50% - 10px);
+}
+
+.navbar-burger.is-active span:nth-child(3) {
+        top: calc(50% + 0px);
+}
+
+.navbar-burger span {
+    height: 5px;
+    left: calc(50% - 25px);
+    width: 50px;
+}
+
+.button:active, .button.is-active {
+    border: none;
+    color: #363636;
+    background: #fff;
+}
+
+.button:hover, .button.is-hovered {
+    border: none;
+    color: #363636;
+    background: #fff;
+}
+
 /*Main*/
 html {
     font-size: 10px;
