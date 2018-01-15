@@ -3,6 +3,15 @@
 <html lang="en">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112394903-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-112394903-1');
+    </script>
     <meta charset="utf-8">
 
     <title>Cox Company</title>
@@ -32,16 +41,15 @@
                     <a class="navbar-item" href="#">
                         Home
                     </a>
-                    <a class="navbar-item " href="#about">
-                        About
+                    <a href="#products" class="navbar-item">
+                        Products
                     </a>
                     <a class="navbar-item" target="_blank" title="View our line card. This opens in a new tab."  href="Cox-Line-Card-2018.pdf">
                         Line Card
                     </a>
-                    <a href="#products" class="navbar-item">
-                        Products
+                    <a class="navbar-item " href="#about">
+                        About
                     </a>
-                    <a href="#" class="navbar-item" target="_blank">Line Card</a>
                     <a class="navbar-item" href="#design">
                         Design Tools
                     </a>
@@ -81,22 +89,6 @@
                     <div><a target="_blank" href="http://www.berner.com"><img src="img/ManB1.jpg" alt="Berner"></a></div>
                     <div><a target="_blank" href="http://www.ampcostacks.com/"><img src="img/ManAMP2.jpg" alt="Ampco"></a></div>
                     <div><a target="_blank" href="http://www.modinehvac.com/"><img src="img/ManModine.jpg" alt="Modine"></a></div>
-                </div>
-            </div>
-        </div>
-        <div id="about" class="section">
-            <div class="container">
-                <h3 class="header">About Us</h3>
-                <div class="columns is-desktop">
-                    <div class="column">
-                        <p>The Edward H. Cox Company is committed to maintaining a leadership position in our industry thru quality products and services for our customers. We take this commitment very seriously and have been doing so since 1935; this is why we can state with pride that we have been <strong>“Providing Applied HVAC Solutions for 3 generations”</strong>.</p>
-                        <p>Edward H. Cox attended Syracuse University and in 1935 established the Edward H. Cox Company as a manufacturer’s representative for boiler room equipment and heating control systems. Throughout his 30 years at the helm, the Cox Company continued to provide heating and ventilating solutions, establishing many long-term relationships with mechanical contractors and design engineers in Western New York.</p>
-                        <p>James W. Cox joined the company in 1960 after serving as a 2nd Lieutenant in the US Navy as an on-board engineering officer. He was a graduate of Brown University and worked side by side with his father, continuing to grow the business. Edward H. Cox died in 1964 leaving James and partner Fred Bardo to continue the business together until Fred’s death in 1978. During this time, the company expanded its product offering into institutional and commercial HVAC markets. Ken Ottaway joined the company in 1982 and helped to grow the customer base and strengthen the product offering. He was followed by the Cox Company’s third generation with the addition of Jim’s sons David and William in the late 1980’s. Upon Jim’s retirement, ownership was transferred to William, David and Ken as it continues today.</p>
-                        <p>The marketplace has evolved over the years, but the Cox Company has met the challenge and continues to provide products and services to the heating and ventilation professionals of WNY. We pride ourselves on our service and expertise, always keeping our customers’ needs first and foremost.</p>
-                    </div>
-                    <div class="column">
-                        <img src="img/EJCOX.jpg" alt="Edward H. Cox and James W. Cox" class="about-image">
-                    </div>
                 </div>
             </div>
         </div>
@@ -145,6 +137,22 @@
                 </div>
             </div>
         </div>
+        <div id="about" class="section">
+            <div class="container">
+                <h3 class="header">About Us</h3>
+                <div class="columns is-desktop">
+                    <div class="column">
+                        <p>The Edward H. Cox Company is committed to maintaining a leadership position in our industry thru quality products and services for our customers. We take this commitment very seriously and have been doing so since 1935; this is why we can state with pride that we have been <strong>“Providing Applied HVAC Solutions for 3 generations”</strong>.</p>
+                        <p>Edward H. Cox attended Syracuse University and in 1935 established the Edward H. Cox Company as a manufacturer’s representative for boiler room equipment and heating control systems. Throughout his 30 years at the helm, the Cox Company continued to provide heating and ventilating solutions, establishing many long-term relationships with mechanical contractors and design engineers in Western New York.</p>
+                        <p>James W. Cox joined the company in 1960 after serving as a 2nd Lieutenant in the US Navy as an on-board engineering officer. He was a graduate of Brown University and worked side by side with his father, continuing to grow the business. Edward H. Cox died in 1964 leaving James and partner Fred Bardo to continue the business together until Fred’s death in 1978. During this time, the company expanded its product offering into institutional and commercial HVAC markets. Ken Ottaway joined the company in 1982 and helped to grow the customer base and strengthen the product offering. He was followed by the Cox Company’s third generation with the addition of Jim’s sons David and William in the late 1980’s. Upon Jim’s retirement, ownership was transferred to William, David and Ken as it continues today.</p>
+                        <p>The marketplace has evolved over the years, but the Cox Company has met the challenge and continues to provide products and services to the heating and ventilation professionals of WNY. We pride ourselves on our service and expertise, always keeping our customers’ needs first and foremost.</p>
+                    </div>
+                    <div class="column">
+                        <img src="img/EJCOX.jpg" alt="Edward H. Cox and James W. Cox" class="about-image">
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="section" id="design">
             <div class="container">
                 <h3 class="header">Design Tools</h3>
@@ -158,29 +166,82 @@
         <div class="section" id="contact">
             <div class="container">
                 <h3 class="header">Contact Us</h3>
-                <form id="contact-form">
-                    <div class="field">
-                        <label class="label">Name</label>
-                        <div class="control">
-                            <input class="input" id="name-input" type="text" placeholder="Name">
-                        </div>
-                    </div>
-                    
-                    <div class="field">
-                        <label class="label">Email</label>
-                        <div class="control">
-                            <input class="input" type="email" id="email-input" placeholder="Email" value="">
-                        </div>
-                    </div>
-                    
-                    <div class="field">
-                        <label class="label">Your Message</label>
-                        <div class="control">
-                            <textarea class="textarea" id="message-input" placeholder="Your Message"></textarea>
-                        </div>
-                    </div>
-                    <button type="submit">Submit</button>
-                </form>
+<script src="https://cdn.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/static/jotform.forms.js?3.3.4070" type="text/javascript"></script>
+<script type="text/javascript">
+   JotForm.init(function(){
+      JotForm.alterTexts({"alphabetic":"This field can only contain letters","alphanumeric":"This field can only contain letters and numbers.","ccDonationMinLimitError":"Minimum amount is {minAmount} {currency}","ccInvalidCVC":"CVC number is invalid.","ccInvalidExpireDate":"Expire date is invalid.","ccInvalidNumber":"Credit Card Number is invalid.","ccMissingDetails":"Please fill up the Credit Card details.","ccMissingDonation":"Please enter numeric values for donation amount.","ccMissingProduct":"Please select at least one product.","characterLimitError":"Too many Characters.  The limit is","characterMinLimitError":"Too few characters. The minimum is","confirmClearForm":"Are you sure you want to clear the form?","confirmEmail":"E-mail does not match","currency":"This field can only contain currency values.","cyrillic":"This field can only contain cyrillic characters","dateInvalid":"This date is not valid. The date format is {format}","dateInvalidSeparate":"This date is not valid. Enter a valid {element}.","dateLimited":"This date is unavailable.","disallowDecimals":"Please enter a whole number.","email":"Enter a valid e-mail address","fillMask":"Field value must fill mask.","freeEmailError":"Free email accounts are not allowed","generalError":"There are errors on the form. Please fix them before continuing.","generalPageError":"There are errors on this page. Please fix them before continuing.","gradingScoreError":"Score total should only be less than or equal to","incompleteFields":"There are incomplete required fields. Please complete them.","inputCarretErrorA":"Input should not be less than the minimum value:","inputCarretErrorB":"Input should not be greater than the maximum value:","lessThan":"Your score should be less than or equal to","maxDigitsError":"The maximum digits allowed is","maxSelectionsError":"The maximum number of selections allowed is","minSelectionsError":"The minimum required number of selections is","multipleFileUploads_emptyError":"{file} is empty, please select files again without it.","multipleFileUploads_fileLimitError":"Only {fileLimit} file uploads allowed.","multipleFileUploads_minSizeError":"{file} is too small, minimum file size is {minSizeLimit}.","multipleFileUploads_onLeave":"The files are being uploaded, if you leave now the upload will be cancelled.","multipleFileUploads_sizeError":"{file} is too large, maximum file size is {sizeLimit}.","multipleFileUploads_typeError":"{file} has invalid extension. Only {extensions} are allowed.","nextButtonText":"Next","numeric":"This field can only contain numeric values","pastDatesDisallowed":"Date must not be in the past.","pleaseWait":"Please wait...","prevButtonText":"Previous","progressMiddleText":"of","required":"This field is required.","requireEveryCell":"Every cell is required.","requireEveryRow":"Every row is required.","requireOne":"At least one field required.","reviewBackText":"Back to Form","reviewSubmitText":"Review and Submit","seeAllText":"See All","submissionLimit":"Sorry! Only one entry is allowed.  Multiple submissions are disabled for this form.","submitButtonText":"Submit","uploadExtensions":"You can only upload following files:","uploadFilesize":"File size cannot be bigger than:","uploadFilesizemin":"File size cannot be smaller than:","url":"This field can only contain a valid URL","wordLimitError":"Too many words. The limit is","wordMinLimitError":"Too few words.  The minimum is"});
+	JotForm.clearFieldOnHide="disable";
+	JotForm.submitError="jumpToFirstError";
+    /*INIT-END*/
+});
+
+   JotForm.prepareCalculationsOnTheFly([null,null,{"name":"submit2","qid":"2","text":"Submit","type":"control_button"},{"name":"name","qid":"3","text":"Name","type":"control_fullname"},{"name":"email","qid":"4","text":"Email","type":"control_email"},{"name":"yourMessage","qid":"5","text":"Your message","type":"control_textarea"}]);
+   setTimeout(function() {
+JotForm.paymentExtrasOnTheFly([null,null,{"name":"submit2","qid":"2","text":"Submit","type":"control_button"},{"name":"name","qid":"3","text":"Name","type":"control_fullname"},{"name":"email","qid":"4","text":"Email","type":"control_email"},{"name":"yourMessage","qid":"5","text":"Your message","type":"control_textarea"}]);}, 20); 
+</script>
+<link href="https://cdn.jotfor.ms/static/formCss.css?3.3.4070" rel="stylesheet" type="text/css" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/nova.css?3.3.4070" />
+<link type="text/css" media="print" rel="stylesheet" href="https://cdn.jotfor.ms/css/printForm.css?3.3.4070" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/themes/CSS/566a91c2977cdfcd478b4567.css?"/>
+<form class="jotform-form" action="https://submit.jotform.us/submit/80054813287154/" method="post" name="form_80054813287154" id="80054813287154" accept-charset="utf-8">
+  <input type="hidden" name="formID" value="80054813287154" />
+  <div class="form-all">
+    <ul class="form-section page-section">
+      <li class="form-line" data-type="control_fullname" id="id_3">
+        <label class="form-label form-label-top form-label-auto" id="label_3" for="first_3"> Name </label>
+        <div id="cid_3" class="form-input-wide">
+          <div data-wrapper-react="true">
+            <span class="form-sub-label-container" style="vertical-align:top;">
+              <input type="text" id="first_3" name="q3_name[first]" class="form-textbox" size="10" value="" data-component="first" />
+              <label class="form-sub-label" for="first_3" id="sublabel_first" style="min-height:13px;"> First Name </label>
+            </span>
+            <span class="form-sub-label-container" style="vertical-align:top;">
+              <input type="text" id="last_3" name="q3_name[last]" class="form-textbox" size="15" value="" data-component="last" />
+              <label class="form-sub-label" for="last_3" id="sublabel_last" style="min-height:13px;"> Last Name </label>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_email" id="id_4">
+        <label class="form-label form-label-top form-label-auto" id="label_4" for="input_4"> Email </label>
+        <div id="cid_4" class="form-input-wide">
+          <span class="form-sub-label-container" style="vertical-align:top;">
+            <input type="email" id="input_4" name="q4_email" class="form-textbox validate[Email]" size="30" value="" data-component="email" />
+            <label class="form-sub-label" for="input_4" style="min-height:13px;"> example@example.com </label>
+          </span>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_textarea" id="id_5">
+        <label class="form-label form-label-top form-label-auto" id="label_5" for="input_5"> Your message </label>
+        <div id="cid_5" class="form-input-wide">
+          <textarea id="input_5" class="form-textarea" name="q5_yourMessage" cols="40" rows="6" data-component="textarea"></textarea>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_button" id="id_2">
+        <div id="cid_2" class="form-input-wide">
+          <div class="form-buttons-wrapper">
+            <button id="input_2" type="submit" class="form-submit-button" data-component="button">
+              Submit
+            </button>
+          </div>
+        </div>
+      </li>
+      <li style="display:none">
+        Should be Empty:
+        <input type="text" name="website" value="" />
+      </li>
+    </ul>
+  </div>
+  <script>
+  JotForm.showJotFormPowered = "new_footer";
+  </script>
+  <input type="hidden" id="simple_spc" name="simple_spc" value="80054813287154" />
+  <script type="text/javascript">
+  document.getElementById("si" + "mple" + "_spc").value = "80054813287154-80054813287154";
+  </script>
+</form>
+<script type="text/javascript">JotForm.ownerView=true;</script>
             </div>
         </div>
         <footer class="footer">

@@ -1,3 +1,16 @@
+/*Jotform Overrides*/
+.jotform-form {
+    padding: 0 !important;
+}
+
+.formFooter {
+    display: none;
+}
+
+.form-line {
+    padding: 0 !important;
+}
+
 /*Helpers*/
 .flex-column {
     flex-direction: column;
@@ -195,4 +208,11 @@ p {
 
 .tile.is-ancestor:not(:last-child) {
     margin-bottom: 2rem;
+}
+
+
+@media (max-width: 767px) {
+    .navbar-item {
+        font-size: 18px;
+    }
 }

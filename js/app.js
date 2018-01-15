@@ -40,32 +40,16 @@ $(function(){
 
 
 
-
-var URL = 'https://swcbn3n8pl.execute-api.us-east-2.amazonaws.com/Live_1/message'
- 
-$('#contact-form').submit(function (event) {
-  event.preventDefault()
- 
-  var data = {
-    name: $('#name-input').val(),
-    email: $('#email-input').val(),
-    description: $('#message-input').val()
-  }
- 
-  $.ajax({
-    type: 'POST',
-    url: URL,
-    dataType: 'json',
-    contentType: 'application/json',
-    data: JSON.stringify(data),
-    success: function () {
-      // clear form and show a success message
-    },
-    error: function () {
-      // show an error message
-    }
-  })
-})
+    $('a[href^="#"]').on('click',function (e) {
+        e.preventDefault();
+        var target = this.hash;
+        $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop':  $target.offset().top - 151
+        }, 900, 'swing', function () {
+            // window.location.hash = target;
+        });
+    });
 
 
 
