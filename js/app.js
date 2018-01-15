@@ -41,7 +41,7 @@ $(function(){
 
 
 
-var URL = 'https://swcbn3n8pl.execute-api.us-east-2.amazonaws.com/Live_1'
+var URL = 'https://swcbn3n8pl.execute-api.us-east-2.amazonaws.com/Live_1/message'
  
 $('#contact-form').submit(function (event) {
   event.preventDefault()
