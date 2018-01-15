@@ -37,4 +37,37 @@ $(function(){
       $html.toggleClass('has-navbar-fixed-top', scrollTop > prev);
       prev = scrollTop;
     });
+
+
+
+
+var URL = 'https://swcbn3n8pl.execute-api.us-east-2.amazonaws.com/Live_1'
+ 
+$('#contact-form').submit(function (event) {
+  event.preventDefault()
+ 
+  var data = {
+    name: $('#name-input').val(),
+    email: $('#email-input').val(),
+    description: $('#message-input').val()
+  }
+ 
+  $.ajax({
+    type: 'POST',
+    url: URL,
+    dataType: 'json',
+    contentType: 'application/json',
+    data: JSON.stringify(data),
+    success: function () {
+      // clear form and show a success message
+    },
+    error: function () {
+      // show an error message
+    }
+  })
+})
+
+
+
+
 });
